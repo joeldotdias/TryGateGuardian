@@ -3,7 +3,6 @@ package com.example.gateguardian.presentation.resident
 import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,9 +12,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material3.Divider
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -74,7 +73,7 @@ fun ResidentDrawer() {
                 // Header
                 Spacer(modifier = Modifier.height(20.dp))
                 DrawerHeader()
-                Divider(thickness = 2.dp)
+                HorizontalDivider(thickness = 2.dp)
                 Spacer(modifier = Modifier.height(20.dp))
 
                 // Drawer items
@@ -89,16 +88,9 @@ fun ResidentDrawer() {
                         },
                         modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding),
                         onClick = {
-                            if(screen.route == ResidentScreens.Dashboard.route) {
-                                navController.navigate(screen.route) {
-                                    popUpTo(screen.route)
-                                }
-                            }
-                            else {
-                                navController.navigate(screen.route) {
-                                    launchSingleTop = true
-                                    restoreState = true
-                                }
+                            navController.navigate(screen.route) {
+                                launchSingleTop = true
+                                //restoreState = true
                             }
                             coroutineScope.launch {
                                 drawerState.close()
@@ -130,7 +122,7 @@ fun ResidentDrawer() {
                             )
                         }
                     },
-                    colors = TopAppBarDefaults.smallTopAppBarColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
+                    colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
                 )
             }
         ) {
@@ -157,20 +149,16 @@ fun DrawerHeader() {
         Image(
             painter = painterResource(id = R.drawable.gate_guardian_logo_with_bgremove),
             contentDescription = "app logo",
-            modifier = Modifier.size(150.dp)
+            modifier = Modifier
+                .size(130.dp)
+                .padding(bottom = 8.dp)
         )
-        Column(
-            modifier = Modifier,
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Text(
-                text = "Gate\nGuardian",
-                style = MaterialTheme.typography.headlineMedium,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.onPrimaryContainer,
-                textAlign = TextAlign.Center
-            )
-        }
+        Text(
+            text = "Gate\nGuardian",
+            style = MaterialTheme.typography.headlineMedium,
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.onPrimaryContainer,
+            textAlign = TextAlign.Center
+        )
     }
 }

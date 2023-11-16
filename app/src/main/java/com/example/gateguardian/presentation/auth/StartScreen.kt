@@ -34,7 +34,6 @@ import androidx.navigation.NavController
 import com.example.gateguardian.R
 import com.example.gateguardian.presentation.navigation.AppScreens
 
-
 @Composable
 fun StartScreen (navController: NavController) {
     Surface (

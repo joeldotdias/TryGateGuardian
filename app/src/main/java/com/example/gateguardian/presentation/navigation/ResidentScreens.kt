@@ -13,31 +13,31 @@ sealed class ResidentScreens(
     val route: String,
     val icon: ImageVector
 ) {
-    object Dashboard: ResidentScreens(
+    data object Dashboard: ResidentScreens(
         title = "Dashboard",
         route = "dashboard",
         icon = Icons.Filled.Speed
     )
 
-    object Visitors: ResidentScreens(
+    data object Visitors: ResidentScreens(
         title = "Visitors",
         route = "visitors",
         icon = Icons.Filled.TransferWithinAStation
     )
 
-    object Regulars: ResidentScreens(
+    data object Regulars: ResidentScreens(
         title = "Regulars",
         route = "regulars",
         icon = Icons.Filled.WatchLater
     )
 
-    object Events: ResidentScreens(
+    data object Events: ResidentScreens(
         title = "Events",
         route = "events",
         icon = Icons.Filled.StarBorder
     )
 
-    object Notices: ResidentScreens(
+    data object Notices: ResidentScreens(
         title = "Notices",
         route = "notices",
         icon = Icons.Filled.Campaign

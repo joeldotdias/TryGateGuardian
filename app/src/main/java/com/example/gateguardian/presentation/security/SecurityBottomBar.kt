@@ -1,7 +1,6 @@
 package com.example.gateguardian.presentation.security
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -18,8 +17,6 @@ import androidx.navigation.compose.rememberNavController
 import com.example.gateguardian.presentation.navigation.SecurityNavigation
 import com.example.gateguardian.presentation.navigation.SecurityScreens
 
-
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SecurityBottomBar() {
 

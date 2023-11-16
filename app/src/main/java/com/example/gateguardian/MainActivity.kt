@@ -7,7 +7,6 @@ import com.example.gateguardian.presentation.navigation.AppNavigation
 import com.example.gateguardian.ui.theme.GateGuardianTheme
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
