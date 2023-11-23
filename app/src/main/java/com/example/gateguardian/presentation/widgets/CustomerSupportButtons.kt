@@ -30,12 +30,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun CustomerSupportButtons (
-    context: Context = LocalContext.current
-) {
-    val supportClicked = remember {
-        mutableStateOf(false)
-    }
+fun CustomerSupportButtons () {
+    val context = LocalContext.current
+    val supportClicked = remember { mutableStateOf(false) }
 
     Row (
         modifier = Modifier

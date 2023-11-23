@@ -35,7 +35,9 @@ import com.example.gateguardian.R
 import com.example.gateguardian.presentation.navigation.AppScreens
 
 @Composable
-fun StartScreen (navController: NavController) {
+fun StartScreen(
+    navController: NavController
+) {
     Surface (
         modifier = Modifier
             .fillMaxSize(),
@@ -44,7 +46,7 @@ fun StartScreen (navController: NavController) {
         Column (
             modifier = Modifier
                 .height(800.dp)
-                .fillMaxWidth(),
+                .fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Top
         ){
@@ -59,10 +61,10 @@ fun StartScreen (navController: NavController) {
 
 
 @Composable
-fun ShowOptions(navController: NavController) {
-    val registerClickedState = remember {
-        mutableStateOf(false)
-    }
+fun ShowOptions(
+    navController: NavController
+) {
+    val registerClickedState = remember { mutableStateOf(false) }
 
     val loginButtonColor = if(!registerClickedState.value) Color.LightGray else Color.White
     val registerButtonColor = if(registerClickedState.value) Color.LightGray else Color.White
@@ -138,7 +140,9 @@ fun ShowOptions(navController: NavController) {
 
 
 @Composable
-fun ShowLoginOptions(navController: NavController) {
+fun ShowLoginOptions(
+    navController: NavController
+) {
     Column (
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
@@ -180,7 +184,9 @@ fun ShowLoginOptions(navController: NavController) {
 
 
 @Composable
-fun ShowRegister(navController: NavController) {
+fun ShowRegister(
+    navController: NavController
+) {
     Column (
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
