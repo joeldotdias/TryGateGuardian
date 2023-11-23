@@ -42,7 +42,6 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.gateguardian.presentation.navigation.AppScreens
 
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SecurityLoginScreen(navController: NavController) {

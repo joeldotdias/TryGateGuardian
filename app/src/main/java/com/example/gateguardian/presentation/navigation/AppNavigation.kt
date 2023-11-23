@@ -11,7 +11,6 @@ import com.example.gateguardian.presentation.auth.StartScreen
 import com.example.gateguardian.presentation.resident.ResidentDrawer
 import com.example.gateguardian.presentation.security.SecurityBottomBar
 
-
 @Composable
 fun AppNavigation() {
     val navController = rememberNavController()

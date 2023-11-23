@@ -44,7 +44,6 @@ import com.example.gateguardian.presentation.navigation.ResidentNavigation
 import com.example.gateguardian.presentation.navigation.ResidentScreens
 import kotlinx.coroutines.launch
 
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ResidentDrawer() {

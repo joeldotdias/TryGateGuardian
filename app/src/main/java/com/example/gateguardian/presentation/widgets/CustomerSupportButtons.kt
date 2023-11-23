@@ -29,7 +29,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 
-
 @Composable
 fun CustomerSupportButtons (
     context: Context = LocalContext.current

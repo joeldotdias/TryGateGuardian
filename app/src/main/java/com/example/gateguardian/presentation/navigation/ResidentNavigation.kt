@@ -10,7 +10,6 @@ import com.example.gateguardian.presentation.resident.notices.NoticesScreen
 import com.example.gateguardian.presentation.resident.regulars.RegularsScreen
 import com.example.gateguardian.presentation.resident.visitors.VisitorsScreen
 
-
 @Composable
 fun ResidentNavigation(navController: NavHostController) {
     NavHost(

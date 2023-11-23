@@ -8,7 +8,6 @@ import com.example.gateguardian.presentation.security.logs.LogsScreen
 import com.example.gateguardian.presentation.security.notify.NotifyScreen
 import com.example.gateguardian.presentation.security.verify.VerifyScreen
 
-
 @Composable
 fun SecurityNavigation(navController: NavHostController) {
     NavHost(
