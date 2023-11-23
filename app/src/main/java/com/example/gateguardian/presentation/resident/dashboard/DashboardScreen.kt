@@ -7,7 +7,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
-import com.example.gateguardian.presentation.widgets.CustomerSupportButtons
 
 @Composable
 fun DashboardScreen() {
@@ -16,7 +15,5 @@ fun DashboardScreen() {
             .fillMaxSize()
     ) {
         Text(text = "Dashboard", fontSize = 30.sp, textAlign = TextAlign.Center)
-
-        CustomerSupportButtons()
     }
 }

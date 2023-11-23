@@ -42,6 +42,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.gateguardian.R
 import com.example.gateguardian.presentation.navigation.ResidentNavigation
 import com.example.gateguardian.presentation.navigation.ResidentScreens
+import com.example.gateguardian.presentation.widgets.CustomerSupportButtons
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -123,6 +124,9 @@ fun ResidentDrawer() {
                     },
                     colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
                 )
+            },
+            floatingActionButton = {
+                CustomerSupportButtons()
             }
         ) {
             Surface(
