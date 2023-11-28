@@ -71,28 +71,30 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
 
-    /* Compose */
-    implementation("androidx.compose.material:material-icons-extended") //Icons
-    implementation("androidx.navigation:navigation-compose:2.7.5") //Navigation
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2") //LifeCycle
+    // Compose
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
+    implementation("androidx.navigation:navigation-compose:2.7.5")
+    implementation("androidx.compose.material:material-icons-extended")
 
-    /* Coroutines */
+    // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
-    /* Coroutine LifeCycle Scope */
+    //LifeCycle Scope
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
 
-    /* Dagger-Hilt */
+    // Dagger-Hilt
     implementation("com.google.dagger:hilt-android:2.48")
     ksp("com.google.dagger:hilt-android-compiler:2.48")
     ksp("androidx.hilt:hilt-compiler:1.1.0")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
 
-    /* Firebase */
+    // Firebase Auth
     implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
 
 }

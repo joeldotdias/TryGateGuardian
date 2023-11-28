@@ -12,7 +12,20 @@
           "package_name": "com.example.gateguardian"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1046981773596-leilrngaq1d9qh5grk43v6r6t3e0ben1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gateguardian",
+            "certificate_hash": "fde35fa9fbc3669e9642e7e49ac56a180e029bc8"
+          }
+        },
+        {
+          "client_id": "1046981773596-22vcdnuesfcu72ten2nuaurm1kkvo5r7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC7EnAFJtGHj9nBdorirIowYx4YqBJhEoA"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046981773596-22vcdnuesfcu72ten2nuaurm1kkvo5r7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
